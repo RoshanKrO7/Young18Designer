@@ -2,7 +2,11 @@
   "name": "doorstep-tailoring",
   "private": true,
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://RoshanKrO7.github.io/Young18Designer",
+=======
+  "homepage": "https://RoshanKrO7.github.io/sYoung18Designer",
+>>>>>>> 2bf09da9d4c710e942f5c3202daa0426a628436f
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
