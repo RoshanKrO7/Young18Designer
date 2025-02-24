@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/smart-tailor-webapp/static/css/main.d5e34ba9.css",
+    "main.js": "/smart-tailor-webapp/static/js/main.e25b75ad.js",
+    "static/js/488.9cf211fa.chunk.js": "/smart-tailor-webapp/static/js/488.9cf211fa.chunk.js",
+    "static/media/NewwhiteBgColor.png": "/smart-tailor-webapp/static/media/NewwhiteBgColor.86bcf0e2d540572441ff.png",
+    "index.html": "/smart-tailor-webapp/index.html",
+    "main.d5e34ba9.css.map": "/smart-tailor-webapp/static/css/main.d5e34ba9.css.map",
+    "main.e25b75ad.js.map": "/smart-tailor-webapp/static/js/main.e25b75ad.js.map",
+    "488.9cf211fa.chunk.js.map": "/smart-tailor-webapp/static/js/488.9cf211fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5e34ba9.css",
+    "static/js/main.e25b75ad.js"
+  ]
+}
