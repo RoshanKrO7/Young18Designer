@@ -10,6 +10,7 @@ import Contact from './pages/Contact.jsx';
 import Tailoring from './pages/Tailoring.jsx';
 import Measurement from './pages/Measurement.jsx';
 import Alteration from './pages/Alteration.jsx';
+import Account from './pages/Account.jsx';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/services/tailoring" element={<Tailoring setCart={setCart} cart={cart} />} />
         <Route path="/services/measurement" element={<Measurement />} />
         <Route path="/services/alteration" element={<Alteration />} />
+        <Route path="/account" element={<Account />} />
         {/* Add other routes here */}
       </Routes>
     </Router>
