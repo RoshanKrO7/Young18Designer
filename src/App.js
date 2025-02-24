@@ -16,7 +16,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   return (
-    <Router>
+    <Router basename="/smart-tailor-webapp">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
