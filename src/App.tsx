@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Scissors } from 'lucide-react';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -26,7 +26,7 @@ const App: React.FC = () => {
 
   return (
     <ErrorBoundary>
-      <Router>
+      <BrowserRouter basename="/Young18Designer">
         <CartProvider>
           <div className="min-h-screen flex flex-col">
             <Navbar />
@@ -87,7 +87,7 @@ const App: React.FC = () => {
             />
           </div>
         </CartProvider>
-      </Router>
+      </BrowserRouter>
     </ErrorBoundary>
   );
 };
