@@ -1,0 +1,7 @@
+{
+  "endOfLine": "auto",
+  "arrowParens": "avoid",
+  "bracketSpacing": false,
+  "jsxBracketSameLine": false,
+  "printWidth": 1000
+} 
