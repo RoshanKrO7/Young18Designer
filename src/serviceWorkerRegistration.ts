@@ -13,13 +13,11 @@ const isLocalhost = Boolean(
 
 export function register(config?: any) {
   if ('serviceWorker' in navigator) {
-    const publicUrl = new URL(
-      window.location.href
-    ).pathname;
+    // Manually set the public URL for GitHub Pages
+    const publicUrl = isLocalhost ? '/' : '/Young18Designer/'; // Adjust this path as needed
     const swUrl = `${publicUrl}service-worker.js`;
 
-    if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
-      // The URL of the service worker file
+    if (process.env.NODE_ENV === 'production') {
       navigator.serviceWorker
         .register(swUrl)
         .then((registration) => {
