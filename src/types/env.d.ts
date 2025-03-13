@@ -7,3 +7,5 @@ declare namespace NodeJS {
     REACT_APP_STRIPE_PUBLIC_KEY?: string;
   }
 } 
+
+console.log('Environment:', process.env.NODE_ENV); 
