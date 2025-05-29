@@ -12,19 +12,25 @@ const isLocalhost = Boolean(
 );
 
 export function register(config?: any) {
-  if ('serviceWorker' in navigator) {
-    const publicUrl = new URL(window.location.href).pathname;
+  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+    // The URL constructor is available in all browsers that support SW.
+    const publicUrl = isLocalhost
+      ? '/'
+      : '/Young18Designer/';
+    
     const swUrl = `${publicUrl}sw.js`;
-
-    if (process.env.NODE_ENV === 'production') {
-      navigator.serviceWorker
-        .register(swUrl)
-        .then((registration) => {
-          console.log('Service Worker registered:', registration);
-        })
-        .catch((error) => {
-          console.error('Service Worker registration failed:', error);
-        });
-    }
+    
+    console.log('Attempting to register service worker at:', swUrl);
+    
+    navigator.serviceWorker
+      .register(swUrl)
+      .then((registration) => {
+        console.log('Service Worker registered successfully:', registration);
+      })
+      .catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+  } else {
+    console.log('Service Worker not registered: either not in production or not supported');
   }
 }
